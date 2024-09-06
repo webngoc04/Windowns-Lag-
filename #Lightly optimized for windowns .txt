@@ -1,0 +1,23 @@
+#Lightly optimized for windows (reduce game lag, avoid game outage due to weak device)
+bcdedit /deletevalue useplatformclock
+bcdedit /deletevalue disabledynamictick
+bcdedit /set useplatformtick Yes
+bcdedit /set tscsyncpolicy Enhanced
+
+#Recommend for ram 16 GB (Below 16GB  Ram should not be used )
+bcdedit /set firstmegabytepolicy UseAll
+bcdedit /set avoidlowmemory 0x8000000
+bcdedit /set nolowmem yes
+
+#For CPU Intel
+bcdedit /set x2apicpolicy Enable
+
+#Deep optimization for Windowns
+bcdedit /set configaccesspolicy Default
+bcdedit /set MSI Default
+bcdedit /set usephysicaldestination No
+bcdedit /set usefirmwarepcisettings No
+bcdedit /set allowedinmemorysettings 0x0
+bcdedit /set isolatedcontext No
+bcdedit /set vsmlaunchtype Off
+bcdedit /set vm No

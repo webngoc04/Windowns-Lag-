@@ -1,0 +1,17 @@
+#Restore all code
+bcdedit /deletevalue useplatformclock
+bcdedit /deletevalue disabledynamictick
+bcdedit /deletevalue useplatformtick
+bcdedit /deletevalue tscsyncpolicy
+bcdedit /deletevalue firstmegabytepolicy
+bcdedit /deletevalue avoidlowmemory
+bcdedit /deletevalue nolowmem
+bcdedit /deletevalue x2apicpolicy
+bcdedit /deletevalue configaccesspolicy
+bcdedit /deletevalue MSI
+bcdedit /deletevalue usephysicaldestination
+bcdedit /deletevalue usefirmwarepcisettings
+bcdedit /deletevalue allowedinmemorysettings
+bcdedit /deletevalue isolatedcontext
+bcdedit /deletevalue vsmlaunchtype
+bcdedit /deletevalue vm
